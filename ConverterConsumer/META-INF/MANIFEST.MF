@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ConverterConsumer
+Bundle-SymbolicName: ConverterConsumer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: converter.consumer.service.ServiceActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: ConverterConsumer
+Import-Package: converter.displayer.service,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: MTIT
