@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TemperatureConverter
+Bundle-SymbolicName: TemperatureConverter
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: temperature.converter.service.TemperatureConverterActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: TemperatureConverter
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: temperature.converter.service
