@@ -12,8 +12,8 @@ public class ServiceDisplayerImpl implements ServiceDisplayer {
 	
 	@Override
 	public void publishService() {
-
-
+		JFrame.setDefaultLookAndFeelDecorated(true);
+		JDialog.setDefaultLookAndFeelDecorated(true);
 
 		cw = new ConverterUnitWindow();
 		cw.setVisible(true);

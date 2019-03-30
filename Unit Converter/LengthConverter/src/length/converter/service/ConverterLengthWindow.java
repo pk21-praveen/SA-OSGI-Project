@@ -142,7 +142,7 @@ public class ConverterLengthWindow extends JDialog {
 					JOptionPane.showMessageDialog(null, "Input Valid Numbers Only ", "Alert", JOptionPane.OK_OPTION);
 
 				} else if (fieldValue1.length() > 10) {
-					JOptionPane.showMessageDialog(null, "Input Value is Too High");
+					JOptionPane.showMessageDialog(null, "Input Value is Too High", "Alert", JOptionPane.OK_OPTION);
 					textField_2.setText(" ");
 
 				} else {
@@ -150,7 +150,7 @@ public class ConverterLengthWindow extends JDialog {
 					boxOneValue = Double.parseDouble(textField_1.getText());
 
 					if (boxOneValue == 0.0) {
-						JOptionPane.showMessageDialog(null, "Input Value is Too Small");
+						JOptionPane.showMessageDialog(null, "Input Value is Too Small", "Alert", JOptionPane.OK_OPTION);
 						textField_2.setText(" ");
 					}
 
@@ -290,7 +290,7 @@ public class ConverterLengthWindow extends JDialog {
 
 				}
 
-				if (!fieldValue1.isEmpty()) {
+				if (!fieldValue1.isEmpty() && fieldValue1.length() <= 10 ) {
 
 					boxTwoValue = Math.round(boxTwoValue * 100) / 100.0;
 					String fieldValue2 = String.valueOf(boxTwoValue);
